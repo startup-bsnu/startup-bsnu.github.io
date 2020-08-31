@@ -196,6 +196,7 @@
 			amountOfClicks++;
 			if(amountOfClicks == 10) {
 				alert("Daniel Boyko && Ivan Burlachenko");
+				amountOfClicks = 0;
 			}
 			$(this).mouseout(function (){
 				amountOfClicks = 0;
