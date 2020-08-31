@@ -191,17 +191,15 @@
 		.append('<a class="close" href="#menu">Close</a>');
 
 	// Joke.
-		var amountOfClicksB = 0;
-		$(document).keydown(function(e) {
-			if (e.keyCode == 66) {
-				amountOfClicksB++;
-				if (amountOfClicksB==10) {
-					alert("Daniel Boyko && Ivan Burlachenko");
-				}
+		var amountOfClicks = 0;
+		$("#author").click(function() {
+			amountOfClicks++;
+			if(amountOfClicks == 10) {
+				alert("Daniel Boyko && Ivan Burlachenko");
 			}
-			else {
-				amountOfClicksB=0;
-			}
+			$(this).mouseout(function (){
+				amountOfClicks = 0;
+			})
 		});
 
 	// Wrapper.
