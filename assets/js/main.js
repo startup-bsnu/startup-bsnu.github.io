@@ -441,16 +441,4 @@
 
 						});
 
-			postForm = $('#viewers').text();
-			console.log(postForm);
-	$.ajax({ //Process the form using $.ajax()
-		type      : 'POST', //Method type
-		url       : 'https://startupbsnu.000webhostapp.com/viewers.php', //Your form processing file URL
-		data      : postForm, //Forms name
-		dataType  : 'json',
-		success   : function(data) {
-			$('#viewers').text(data);
-		}
-	});
-
 })(jQuery);
